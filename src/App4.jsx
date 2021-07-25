@@ -32,9 +32,9 @@ function App3() {
             <Navbar toggle={toggle}/>
             <Dropdown isOpen = {isOpen} toggle={toggle}/>
             <Switch>
-                <Route path="/" exact component={Home}/>
-                <Route path="/menu" component={Menu}/>
-                <Route path="/about" component={Abouts}/>
+                <Route path="./" exact component={Home}/>
+                <Route path="./menu" component={Menu}/>
+                <Route path="./about" component={Abouts}/>
             </Switch>
             <Footer/>
         </>
