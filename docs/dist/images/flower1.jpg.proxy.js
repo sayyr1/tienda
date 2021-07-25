@@ -1,0 +1,1 @@
+export default "/dist/images/flower1.jpg";
