@@ -17,10 +17,10 @@ const Navbar = ({ toggle }) => {
             </div>
             
             <div className="pr-8 hidden md:block">
-                <Link className="p-4 no-underline" to="/">Home</Link>
-                <Link className="p-4 no-underline" to="/menu">Menu</Link>
-                <Link className="p-4 no-underline" to="/about">About</Link>
-                <Link className="p-4 no-underline" to="/contact">Contact</Link>
+                <Link className="p-4 no-underline" to="../">Home</Link>
+                <Link className="p-4 no-underline" to="../menu">Menu</Link>
+                <Link className="p-4 no-underline" to="../about">About</Link>
+                <Link className="p-4 no-underline" to="../contact">Contact</Link>
             </div>
         </nav>
     )
