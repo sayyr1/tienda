@@ -6,6 +6,7 @@ import './index.css';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <p className={"text-red-500"}>hola no se que estas haciendo</p>
   </React.StrictMode>,
   document.getElementById('root'),
 );
