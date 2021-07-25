@@ -1,25 +1,8 @@
-import React, {useState, useEffect} from "../snowpack/pkg/react.js";
-import logo from "./logo.svg.proxy.js";
-import "./App.css.proxy.js";
-function App({}) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1e3);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
+import React from "../snowpack/pkg/react.js";
+import "./index.css.proxy.js";
+function App() {
   return /* @__PURE__ */ React.createElement("div", {
-    className: "App"
-  }, /* @__PURE__ */ React.createElement("header", {
-    className: "App-header"
-  }, /* @__PURE__ */ React.createElement("img", {
-    src: logo,
-    className: "App-logo",
-    alt: "logo"
-  }), /* @__PURE__ */ React.createElement("p", null, "Parece que esta trabajando ", /* @__PURE__ */ React.createElement("code", null, "src/App.tsx"), " and save to reload."), /* @__PURE__ */ React.createElement("p", null, "Page has been open for ", /* @__PURE__ */ React.createElement("code", null, count), " seconds."), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("a", {
-    className: "App-link ",
-    href: "https://reactjs.org",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, "Learn React"))));
+    className: "color-text-red p-10 p-10 text"
+  }, /* @__PURE__ */ React.createElement("h2", null, "Hola que estas haciendo amigo"));
 }
 export default App;
