@@ -25,16 +25,16 @@ const Navbar = ({toggle}) => {
     className: "pr-8 hidden md:block"
   }, /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
-    to: "/"
+    to: "../"
   }, "Home"), /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
-    to: "/menu"
+    to: "../menu"
   }, "Menu"), /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
-    to: "/about"
+    to: "../about"
   }, "About"), /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
-    to: "/contact"
+    to: "../contact"
   }, "Contact")));
 };
 export default Navbar;
