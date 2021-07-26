@@ -1,11 +1,9 @@
 import React from "react";
-// import flower3 from "../images/flower1.jpg"
-// import flower2 from "../images/flower2.jpg"
 const Contents = () => {
     return(
         <>
         <div className="menu-card">
-            <img src={"../images/flower1.jpg"} alt="egg" className="h-full rounded mb-20 shadow"/>
+            <img src={"https://github.com/sayyr1/CSE-340--We-Backend-I-/blob/main/week14/phpmotors/images/vehicles/camaro.jpg?raw=true"} alt="egg" className="h-full rounded mb-20 shadow"/>
             <div className="center-content">
                 <h2 className="text-2xl mb-2">Flores</h2>
                 <p className="mb-2">Bonitas flores y coloridas</p>
@@ -13,7 +11,7 @@ const Contents = () => {
             </div>
         </div>
     <div className="menu-card">
-        <img src={"../images/flower2.jpg"} alt="egg" className="h-full rounded mb-20 shadow"/>
+        <img src={"https://github.com/sayyr1/CSE-340--We-Backend-I-/blob/main/week14/phpmotors/images/vehicles/camaro.jpg?raw=true"} alt="egg" className="h-full rounded mb-20 shadow"/>
         <div className="center-content">
             <h2 className="text-2xl mb-2">Flores</h2>
             <p className="mb-2">Bonitas flores y coloridas</p>
