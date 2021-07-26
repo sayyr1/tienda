@@ -3,7 +3,7 @@ const Contents = () => {
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
     className: "menu-card"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "../images/flower1.jpg",
+    src: "https://github.com/sayyr1/CSE-340--We-Backend-I-/blob/main/week14/phpmotors/images/vehicles/camaro.jpg?raw=true",
     alt: "egg",
     className: "h-full rounded mb-20 shadow"
   }), /* @__PURE__ */ React.createElement("div", {
@@ -15,7 +15,7 @@ const Contents = () => {
   }, "Bonitas flores y coloridas"), /* @__PURE__ */ React.createElement("span", null, "$16"))), /* @__PURE__ */ React.createElement("div", {
     className: "menu-card"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "../images/flower2.jpg",
+    src: "https://github.com/sayyr1/CSE-340--We-Backend-I-/blob/main/week14/phpmotors/images/vehicles/camaro.jpg?raw=true",
     alt: "egg",
     className: "h-full rounded mb-20 shadow"
   }), /* @__PURE__ */ React.createElement("div", {
