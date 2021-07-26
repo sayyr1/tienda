@@ -1,11 +1,15 @@
 import React from "react";
+import DisplayCards from '../cards/Cards';
 
 
 const Menu = () =>{
     return(
-        <div className="h-screen flex justify-center items-center bg-green-400 ">
-        <h1 className="text-9xl uppercase font-black">Meny</h1>
-        </div>
+      <>
+          <section className="bg-green-400 p-10">
+            <DisplayCards/>
+          </section>
+        
+      </>
     )
 }
 export default Menu
