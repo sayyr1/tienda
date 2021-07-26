@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
     to: "/"
   }, "Home"), /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
-    to: "/menu"
+    to: "./menu"
   }, "Menu"), /* @__PURE__ */ React.createElement(Link, {
     className: "p-4 no-underline",
     to: "/about"
