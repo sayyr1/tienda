@@ -28,14 +28,14 @@ function App3() {
     isOpen,
     toggle
   }), /* @__PURE__ */ React.createElement(Switch, null, /* @__PURE__ */ React.createElement(Route, {
-    path: "./",
+    path: "/",
     exact: true,
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "./menu",
+    path: "/menu",
     component: Menu
   }), /* @__PURE__ */ React.createElement(Route, {
-    path: "./about",
+    path: "/about",
     component: Abouts
   })), /* @__PURE__ */ React.createElement(Footer, null));
 }
