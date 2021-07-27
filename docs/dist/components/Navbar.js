@@ -1,10 +1,10 @@
 import React from "../../snowpack/pkg/react.js";
-import {Link} from "../../snowpack/pkg/react-router-dom.js";
+import {Link, NavLink} from "../../snowpack/pkg/react-router-dom.js";
 const Navbar = ({toggle}) => {
   return /* @__PURE__ */ React.createElement("nav", {
     className: "flex justify-between items-center h-16 bg-white text-black-500 relative\n         shadow-sm font-mono",
     role: "navigation"
-  }, /* @__PURE__ */ React.createElement(Link, {
+  }, /* @__PURE__ */ React.createElement(NavLink, {
     to: "/",
     className: "pl-8"
   }, "Logo"), /* @__PURE__ */ React.createElement("div", {
@@ -23,18 +23,21 @@ const Navbar = ({toggle}) => {
     d: "M4 6h16M4 12h16M4 18h16"
   }))), /* @__PURE__ */ React.createElement("div", {
     className: "pr-8 hidden md:block"
-  }, /* @__PURE__ */ React.createElement(Link, {
+  }, /* @__PURE__ */ React.createElement(NavLink, {
     className: "p-4 no-underline",
     to: "/"
-  }, "Home"), /* @__PURE__ */ React.createElement(Link, {
+  }, "Home"), /* @__PURE__ */ React.createElement(NavLink, {
     className: "p-4 no-underline",
-    to: "./menu"
-  }, "Menu"), /* @__PURE__ */ React.createElement(Link, {
+    to: "./menu",
+    activeClassName: "bg-red-600 text-gray-100 rounded-lg"
+  }, "Ofertas"), /* @__PURE__ */ React.createElement(NavLink, {
     className: "p-4 no-underline",
-    to: "/about"
-  }, "About"), /* @__PURE__ */ React.createElement(Link, {
+    to: "/about",
+    activeClassName: "bg-red-600 text-gray-100 rounded-lg"
+  }, "Nosotros"), /* @__PURE__ */ React.createElement(NavLink, {
     className: "p-4 no-underline",
-    to: "/contact"
+    to: "/contact",
+    activeClassName: "bg-red-600 text-gray-100 rounded-lg"
   }, "Contact")));
 };
 export default Navbar;

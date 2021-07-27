@@ -4,7 +4,7 @@ import Footer from "./components/Footer.js";
 import {Route, Switch} from "../snowpack/pkg/react-router-dom.js";
 import Home from "./pages/home.js";
 import Abouts from "./pages/about.js";
-import Menu from "./pages/menu.js";
+import Ofertas from "./pages/ofertas.js";
 import Dropdown from "./components/Dropdown.js";
 function App3() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ function App3() {
     component: Home
   }), /* @__PURE__ */ React.createElement(Route, {
     path: "/menu",
-    component: Menu
+    component: Ofertas
   }), /* @__PURE__ */ React.createElement(Route, {
     path: "/about",
     component: Abouts
