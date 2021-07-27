@@ -1,6 +1,4 @@
 import React from "react";
-
-
 const Abouts = () =>{
     return(
         <div className="h-screen flex justify-center items-center bg-yellow-400 ">

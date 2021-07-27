@@ -1,14 +1,14 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = ({ toggle }) => {
     return (
         <nav className="flex justify-between items-center h-16 bg-white text-black-500 relative
          shadow-sm font-mono"
              role="navigation">
-            <Link to="/" className="pl-8">
+            <NavLink to="/" className="pl-8">
                 Logo
-            </Link>
+            </NavLink>
             <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
@@ -17,10 +17,10 @@ const Navbar = ({ toggle }) => {
             </div>
             
             <div className="pr-8 hidden md:block">
-                <Link className="p-4 no-underline" to="/">Home</Link>
-                <Link className="p-4 no-underline" to="./menu">Menu</Link>
-                <Link className="p-4 no-underline" to="/about">About</Link>
-                <Link className="p-4 no-underline" to="/contact">Contact</Link>
+                <NavLink className="p-4 no-underline" to="/">Home</NavLink>
+                <NavLink className="p-4 no-underline" to="./menu" activeClassName="bg-red-600 text-gray-100 rounded-lg">Ofertas</NavLink>
+                <NavLink className="p-4 no-underline" to="/about" activeClassName="bg-red-600 text-gray-100 rounded-lg">Nosotros</NavLink>
+                <NavLink className="p-4 no-underline" to="/contact"  activeClassName="bg-red-600 text-gray-100 rounded-lg">Contact</NavLink>
             </div>
         </nav>
     )

@@ -1,12 +1,12 @@
 import React from "react";
 import Principla from "../components/Principla";
-import Contents from "../components/Contents";
+import Opciones from "../components/Opciones";
 
 const Home = () =>{
     return(
         <>
             <Principla/>
-            <Contents/>
+            <Opciones/>
         </>
     )
 }
