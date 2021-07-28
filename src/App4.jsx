@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import {Route, Switch} from "react-router-dom";
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Home from './pages/home'
 import Abouts from "./pages/about";
 import Ofertas from "./pages/ofertas";
 import Dropdown from "./components/Dropdown";
+import ProductDetails from './cards/ProductDetails';
+import Contact from './pages/contacts';
+import Adultos from './pages/Adultos';
 
 function App3() {
+    
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () =>{
         setIsOpen(!isOpen)
@@ -33,8 +37,10 @@ function App3() {
             <Dropdown isOpen = {isOpen} toggle={toggle}/>
             <Switch>
                 <Route path="/" exact component={Home}/>
-                <Route path="/menu" component={Ofertas}/>
-                <Route path="/about" component={Abouts}/>
+                <Route path="/menu" exact component={Ofertas}/>
+                <Route path="/about"  exact component={Abouts}/>
+                <Route path="/contact" exact component={Contact}/>
+                <Route path="/adultos" exact component={Adultos}/>
             </Switch>
             <Footer/>
         </>

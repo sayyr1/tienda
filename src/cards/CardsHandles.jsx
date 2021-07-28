@@ -1,10 +1,28 @@
 import React from 'react';
-const CardsHandler = (props) =>{
-  return(
-    <div className="w-50 flex flex-col cursor-pointer hover:scale-110">
-      <h3 className="text-center">{props.names}</h3>
-      <img src={props.images} alt="hola"/>
-    </div>
-  )
-}
-export default CardsHandler
+import { Link, useParams, Route, BrowserRouter as Router, Switch, HashRouter } from 'react-router-dom';
+import ProductDetails from './ProductDetails';
+
+const Account = () => {
+  const { account } = useParams();
+  return (
+    <h3>ID: {account}</h3>
+  );
+};
+
+
+const CardsHandler = (props) => {
+  return (
+    <HashRouter>
+      <div>
+        <Link to='/details' className='rounded-full bg-green-400'>
+          <h3 className='text-center'>{props.names}</h3>
+        </Link>
+        
+          <Route path='/:details'>
+            <Account/>
+          </Route>
+      </div>
+    </HashRouter>
+  );
+};
+export default CardsHandler;

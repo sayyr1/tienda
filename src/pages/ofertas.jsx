@@ -1,15 +1,19 @@
-import React from "react";
+import React from 'react';
 import DisplayCards from '../cards/Cards';
+import ProductDetails from '../cards/ProductDetails';
 
 
-const Ofertas = () =>{
-    return(
-      <>
-          <section className="bg-green-400 p-10">
-            <DisplayCards/>
-          </section>
-        
-      </>
-    )
-}
-export default Ofertas
+
+const Ofertas = () => {
+  
+  
+  
+  return (
+    <>
+      <div className='bg-green-400 p-10'>
+        <DisplayCards />
+      </div>
+    </>
+  );
+};
+export default Ofertas;
