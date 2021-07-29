@@ -2,13 +2,13 @@ import React from "../../snowpack/pkg/react.js";
 import {Link} from "../../snowpack/pkg/react-router-dom.js";
 const Principla = () => {
   return /* @__PURE__ */ React.createElement("div", {
-    className: "bg-white h-screen flex flex-col items-center justify-center"
+    className: "bg-white flex flex-col items-center justify-center landing md:px-60 md:w-auto md:h-auto"
   }, /* @__PURE__ */ React.createElement("h1", {
-    className: "lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14"
-  }, "Hola"), /* @__PURE__ */ React.createElement(Link, {
-    className: "py-6 px-10 bg-yellow-500 rounded-full hover:bg-yellow-300 flex\n            items-center transition duration-300 ease-in-out animate-bounce",
-    to: "/"
-  }, "Order Now", /* @__PURE__ */ React.createElement("svg", {
+    className: "lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14 text-white"
+  }, "Say.com"), /* @__PURE__ */ React.createElement(Link, {
+    className: "py-6 px-10 bg-yellow-500 rounded-full hover:bg-yellow-300 flex\r\n            items-center transition duration-300 ease-in-out animate-bounce",
+    to: "/menu"
+  }, "Ofertas", /* @__PURE__ */ React.createElement("svg", {
     className: "w-6 h-6 ml-4",
     fill: "none",
     stroke: "currentColor",
