@@ -16,7 +16,7 @@ const informationArray = [
   {
     id: 1,
     price: 10,
-    name: 'Camisetas',
+    name: 'Sacos',
     image: 'https://raw.githubusercontent.com/sayyr1/personal/master/images/kisth_1.png',
   },
   {
