@@ -9,6 +9,8 @@ import Dropdown from "./components/Dropdown.js";
 import ProductDetails from "./cards/ProductDetails.js";
 import Contact from "./pages/contacts.js";
 import Adultos from "./pages/Adultos.js";
+import Tradicional from "./pages/Tradicional.js";
+import Ninos from "./pages/Ninos.js";
 function App3() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -50,6 +52,14 @@ function App3() {
     path: "/adultos",
     exact: true,
     component: Adultos
+  }), /* @__PURE__ */ React.createElement(Route, {
+    path: "/ninos",
+    exact: true,
+    component: Ninos
+  }), /* @__PURE__ */ React.createElement(Route, {
+    path: "/tradicional",
+    exact: true,
+    component: Tradicional
   })), /* @__PURE__ */ React.createElement(Footer, null));
 }
 export default App3;

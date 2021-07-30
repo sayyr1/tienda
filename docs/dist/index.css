@@ -569,12 +569,28 @@ video {
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 	--tw-shadow: 0 0 #0000;
+	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
+	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+	--tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+	--tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+	--tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-invert: var(--tw-empty,/*!*/ /*!*/);
+	--tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+	--tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .absolute {
 	position: absolute;
 }
 .relative {
 	position: relative;
+}
+.bottom-0 {
+	bottom: 0px;
+}
+.left-0 {
+	left: 0px;
 }
 .my-10 {
 	margin-top: 2.5rem;
@@ -610,11 +626,20 @@ video {
 .h-6 {
 	height: 1.5rem;
 }
+.h-40 {
+	height: 10rem;
+}
 .w-6 {
 	width: 1.5rem;
 }
+.w-full {
+	width: 100%;
+}
 .w-10 {
 	width: 2.5rem;
+}
+.transform {
+	transform: var(--tw-transform);
 }
 @-webkit-keyframes bounce {
 
@@ -715,6 +740,10 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
+.bg-green-200 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+}
 .p-4 {
 	padding: 1rem;
 }
@@ -785,6 +814,9 @@ video {
 .no-underline {
 	text-decoration: none;
 }
+.opacity-0 {
+	opacity: 0;
+}
 .shadow-sm {
 	--tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -799,6 +831,9 @@ video {
 .duration-300 {
 	transition-duration: 300ms;
 }
+.duration-1000 {
+	transition-duration: 1000ms;
+}
 .ease-in-out {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -807,14 +842,20 @@ video {
 	--tw-scale-y: 1.05;
 	transform: var(--tw-transform);
 }
-.hover\:scale-110:hover {
-	--tw-scale-x: 1.1;
-	--tw-scale-y: 1.1;
-	transform: var(--tw-transform);
-}
 .hover\:bg-yellow-300:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+}
+.group:hover .group-hover\:opacity-100 {
+	opacity: 1;
+}
+.group:hover .group-hover\:blur {
+	--tw-blur: blur(8px);
+	filter: var(--tw-filter);
+}
+.group:hover .group-hover\:grayscale {
+	--tw-grayscale: grayscale(100%);
+	filter: var(--tw-filter);
 }
 @media (min-width: 640px) {
 

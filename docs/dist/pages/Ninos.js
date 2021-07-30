@@ -72,9 +72,9 @@ const imagesDisplay = informationArray.map((items) => {
     className: "rounded-xl mb-2 p-2 text-white bg-green-400\n         transition duration-300 transform translate-y-19 animate-bounce"
   }, "Comprar")));
 });
-function Adultos() {
+function Ninos() {
   return /* @__PURE__ */ React.createElement("div", {
     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5 p-10 bg-gray-100"
   }, imagesDisplay);
 }
-export default Adultos;
+export default Ninos;
