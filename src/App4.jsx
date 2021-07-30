@@ -9,6 +9,8 @@ import Dropdown from "./components/Dropdown";
 import ProductDetails from './cards/ProductDetails';
 import Contact from './pages/contacts';
 import Adultos from './pages/Adultos';
+import Tradicional from './pages/Tradicional';
+import Ninos from './pages/Ninos';
 
 function App3() {
     
@@ -41,6 +43,8 @@ function App3() {
                 <Route path="/about"  exact component={Abouts}/>
                 <Route path="/contact" exact component={Contact}/>
                 <Route path="/adultos" exact component={Adultos}/>
+                <Route path="/ninos" exact component={Ninos}/>
+                <Route path="/tradicional" exact component={Tradicional}/>
             </Switch>
             <Footer/>
         </>

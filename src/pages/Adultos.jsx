@@ -59,12 +59,18 @@ const informationArray = [
 
 const imagesDisplay = informationArray.map((items) => {
   return (
-    <div className='flex flex-col items-center justify-center border border-green-300 bg-white mb-4'>
+    <div className='group  flex flex-col items-center justify-center border border-green-300 bg-white mb-4 relative'>
       <h2 className="text-xl">{items.name}</h2>
-      <img className="hover:scale-110" src={items.image} alt={`${items.name} images`} />
-      <a
-        href="https://api.whatsapp.com/send/?phone=%2B593983842004&text=Estoy+Interesado+en+este+producto.&app_absent=0"
-        target="_blank" className="rounded-xl mb-2 p-2 text-white bg-green-400">Comprar</a>
+      <img className=" group-hover:grayscale group-hover:blur group-hover:contrast" src={items.image} alt={`${items.name} images`} />
+    
+      <div className="w-full bg-green-200 text-center h-40 transform opacity-0 group-hover:opacity-100 transition absolute bottom-0 left-0
+      duration-1000 flex flex-col items-center justify-center rounded-lg
+      ">
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B593983842004&text=Estoy+Interesado+en+este+producto.&app_absent=0"
+          target="_blank" className="rounded-xl mb-2 p-2 text-white bg-green-400
+         transition duration-300 transform translate-y-19 animate-bounce">Comprar</a>
+      </div>
     </div>
   );
 });
